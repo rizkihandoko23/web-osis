@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Struktur Organisasi</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/struktur.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+    <img src="assets/icons/logo.png" alt="Logo OSIS">
+    <h2>OSIS SMA KARTINI</h2>
+</a>
+
+<ul class="nav-menu">
+
+<li>
+    <a href="index.html">Home</a>
+</li>
+
+<li>
+    <a href="event.html">Event</a>
+</li>
+
+<li>
+    <a href="index.html#kritik">
+        Kritik & Saran
+    </a>
+</li>
+
+<li class="dropdown">
+
+<a href="#">Lainnya ▼</a>
+
+<ul class="dropdown-content">
+
+<li>
+<a href="struktur-organisasi.html">
+Struktur Organisasi
+</a>
+</li>
+
+<li>
+<a href="upcoming-event.html">
+Upcoming Event
+</a>
+</li>
+
+<li>
+<a href="laporan-keuangan.html">
+Laporan Keuangan
+</a>
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<div class="hamburger">☰</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HEADER PAGE -->
+
+<section class="struktur-header">
+
+<div class="container">
+
+<h1>Struktur Organisasi OSIS</h1>
+
+<p>
+Periode 2026 - 2027
+</p>
+
+</div>
+
+</section>
+
+<!-- BAGAN -->
+
+<section class="struktur-bagan">
+
+<div class="container">
+
+<!-- Ketua -->
+
+<div class="center">
+
+<div class="person-card">
+
+<img src="assets/images/ketua.png">
+
+<h3>Muhammad Alif</h3>
+
+<span>Ketua OSIS</span>
+
+</div>
+
+</div>
+
+<div class="vertical-line"></div>
+
+<!-- Wakil -->
+
+<div class="center">
+
+<div class="person-card">
+
+<img src="assets/images/wakil.png">
+
+<h3>Nabila Putri</h3>
+
+<span>Wakil Ketua</span>
+
+</div>
+
+</div>
+
+<div class="vertical-line"></div>
+
+<!-- Sekretaris dan Bendahara -->
+
+<div class="division-row">
+
+<div class="division">
+
+<h2>Sekretaris</h2>
+
+<div class="member-grid">
+
+<div class="person-card small">
+<img src="assets/images/s1.png">
+<h4>Sekretaris 1</h4>
+</div>
+
+<div class="person-card small">
+<img src="assets/images/s2.png">
+<h4>Sekretaris 2</h4>
+</div>
+
+</div>
+
+</div>
+
+<div class="division">
+
+<h2>Bendahara</h2>
+
+<div class="member-grid">
+
+<div class="person-card small">
+<img src="assets/images/b1.png">
+<h4>Bendahara 1</h4>
+</div>
+
+<div class="person-card small">
+<img src="assets/images/b2.png">
+<h4>Bendahara 2</h4>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEKBID -->
+
+<div class="sekbid-grid">
+
+    <div class="sekbid-card">
+        <h3>SEKBID 1</h3>
+
+        <p>
+            Pembinaan Keimanan dan Ketakwaan
+        </p>
+
+        <span>5 Anggota</span>
+
+        <button
+        class="detail-btn"
+        data-sekbid="1">
+            Lihat Detail
+        </button>
+    </div>
+
+    <div class="sekbid-card">
+        <h3>SEKBID 2</h3>
+
+        <p>
+            Kehidupan Berbangsa dan Bernegara
+        </p>
+
+        <span>5 Anggota</span>
+
+        <button
+        class="detail-btn"
+        data-sekbid="2">
+            Lihat Detail
+        </button>
+    </div>
+
+    <div class="sekbid-card">
+        <h3>SEKBID 3</h3>
+
+        <p>
+            Pendidikan Pendahuluan Bela Negara
+        </p>
+
+        <span>5 Anggota</span>
+
+        <button
+        class="detail-btn"
+        data-sekbid="3">
+            Lihat Detail
+        </button>
+    </div>
+
+    <!-- lanjutkan sampai Sekbid 10 -->
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="sekbidModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">
+            &times;
+        </span>
+
+        <div id="modalBody">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+<div class="container">
+
+<p class="copyright">
+© 2026 OSIS SMA Kartini
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/sekbid.js"></script>
+
+</body>
+</html>
