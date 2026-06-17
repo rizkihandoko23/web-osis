@@ -1,0 +1,199 @@
+.struktur-header{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:70px 0;
+}
+
+.struktur-header h1{
+    margin-bottom:10px;
+}
+
+.struktur-bagan{
+    padding:80px 0;
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+}
+
+.vertical-line{
+    width:4px;
+    height:50px;
+    background:var(--primary);
+    margin:20px auto;
+}
+
+.person-card{
+    background:white;
+    width:260px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.person-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.person-card h3{
+    color:var(--primary);
+}
+
+.person-card span{
+    color:#666;
+}
+
+.division-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    margin-top:30px;
+}
+
+.division h2{
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:25px;
+}
+
+.member-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.small{
+    width:220px;
+}
+
+.small img{
+    width:90px;
+    height:90px;
+}
+
+/* =====================
+   SEKBID CARD
+===================== */
+
+.sekbid-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.sekbid-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.sekbid-card p{
+    min-height:50px;
+    margin-bottom:15px;
+}
+
+.sekbid-card span{
+    display:block;
+    margin-bottom:20px;
+    color:#666;
+}
+
+.detail-btn{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* =====================
+   MODAL
+===================== */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    z-index:9999;
+}
+
+.modal-content{
+    background:white;
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+    padding:30px;
+    border-radius:15px;
+    position:relative;
+}
+
+.close-modal{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.modal-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.modal-header h2{
+    color:var(--primary);
+}
+
+.ketua-bidang{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.ketua-bidang img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.anggota-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.anggota-card{
+    text-align:center;
+}
+
+.anggota-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .division-row{
+        grid-template-columns:1fr;
+    }
+
+    .sekbid-grid{
+        grid-template-columns:1fr;
+    }
+
+}
